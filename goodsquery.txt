@@ -1,0 +1,4 @@
+select g.goods_id, g.goods_name, gg.group_name
+from Goods g
+left join goods_in_group gig on gig.goods_id = g.goods_id
+left join GroupGoods gg on gg.group_id= gig.group_id
